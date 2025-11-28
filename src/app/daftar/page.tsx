@@ -14,7 +14,6 @@ export default function DaftarPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement registration logic
     console.log("Pendaftaran:", formData);
     alert(
       "Terima kasih telah mendaftar! Anda akan menerima email konfirmasi beserta username dan password."
