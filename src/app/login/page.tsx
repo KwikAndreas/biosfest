@@ -125,7 +125,7 @@ export default function LoginPage() {
               </p>
             </div>
 
-            <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
+            {/* <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
               <p className="text-sm font-semibold text-gray-900 mb-3">
                 Akun Demo untuk Testing:
               </p>
@@ -147,7 +147,7 @@ export default function LoginPage() {
                 Setelah mendaftar, panitia akan memberikan username dan password
                 yang dapat diubah setelah login pertama kali.
               </p>
-            </div>
+            </div> */}
           </>
         ) : (
           <>

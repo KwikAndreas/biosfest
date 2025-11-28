@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BIOSFEST 2026- Seminar dan Lomba Nasional",
   description:
-    "Seminar dan Lomba Nasional Teknologi Informasi yang diselenggarakan oleh UBM. Kompetisi UI/UX Design dan Web Development.",
+    "Seminar dan Lomba Nasional Teknologi Informasi yang diselenggarakan oleh UBM BIOS. Kompetisi UI/UX Design dan Web Development.",
 };
 
 export default function RootLayout({
