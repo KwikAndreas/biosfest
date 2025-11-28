@@ -94,7 +94,7 @@ function PesertaDashboardContent() {
                 Upload proposal dalam format PDF
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                Deadline: 13 April 2025
+                Deadline: 13 April 2026
               </p>
             </div>
           </Link>
@@ -123,7 +123,7 @@ function PesertaDashboardContent() {
                 Upload link Figma/Drive + Video YouTube
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                Deadline: 20 April 2025
+                Deadline: 20 April 2026
               </p>
             </div>
           </Link>
@@ -151,7 +151,7 @@ function PesertaDashboardContent() {
               <p className="text-gray-600 text-sm">
                 Upload PPT presentasi final
               </p>
-              <p className="text-xs text-gray-500 mt-2">Deadline: 4 Mei 2025</p>
+              <p className="text-xs text-gray-500 mt-2">Deadline: 4 Mei 2026</p>
             </div>
           </Link>
         </div>

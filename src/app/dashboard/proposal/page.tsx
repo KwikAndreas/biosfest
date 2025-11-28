@@ -32,7 +32,7 @@ export default function ProposalPage() {
             Submit Proposal
           </h1>
           <p className="text-gray-600 mb-6">
-            Seleksi 1 - Deadline: 13 April 2025
+            Seleksi 1 - Deadline: 13 April 2026
           </p>
 
           <div className="mb-6 p-4 bg-blue-50 rounded-lg">

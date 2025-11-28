@@ -52,7 +52,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
           <p>
-            &copy; 2025 BIOSFEST - Universitas Bunda Mulia. All rights reserved.
+            &copy; 6 BIOSFEST - Universitas Bunda Mulia. All rights reserved.
           </p>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function FinalPage() {
             Submit Final
           </h1>
           <p className="text-gray-600 mb-6">
-            Seleksi 3 - Finalist - Deadline: 4 Mei 2025
+            Seleksi 3 - Finalist - Deadline: 4 Mei 2026
           </p>
 
           <div className="mb-6 p-4 bg-purple-50 rounded-lg border border-purple-200">
@@ -44,7 +44,7 @@ export default function FinalPage() {
               <li>Maksimal ukuran: 20 MB</li>
               <li>Berisi presentasi lengkap proyek untuk pitching ke juri</li>
               <li>Durasi presentasi maksimal 10 menit</li>
-              <li>Harus hadir di acara offline pada 11 Mei 2025</li>
+              <li>Harus hadir di acara offline pada 11 Mei 2026</li>
             </ul>
           </div>
 
@@ -79,7 +79,7 @@ export default function FinalPage() {
           <div className="mt-6 p-4 bg-red-50 rounded-lg border border-red-200">
             <p className="text-sm text-gray-700">
               <strong>Penting:</strong> Semua anggota tim wajib hadir ke acara
-              offline pada <strong>11 Mei 2025</strong> di TUSR UBM Ancol untuk
+              offline pada <strong>11 Mei 2026</strong> di TUSR UBM Ancol untuk
               presentasi final dan pengumuman pemenang.
             </p>
           </div>

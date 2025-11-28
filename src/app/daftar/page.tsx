@@ -31,7 +31,7 @@ export default function DaftarPage() {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-3">
-            Formulir Pendaftaran BIOSFEST 2025
+            Formulir Pendaftaran BIOSFEST 2026
           </h1>
           <p className="text-gray-700">
             Biaya Pendaftaran:{" "}

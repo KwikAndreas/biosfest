@@ -1,6 +1,6 @@
-# BIOSFEST 2025 - Website Resmi
+# BIOSFEST 2026 - Website Resmi
 
-Website resmi untuk Seminar dan Lomba Nasional Teknologi Informasi BIOSFEST 2025 yang diselenggarakan oleh Universitas Bunda Mulia.
+Website resmi untuk Seminar dan Lomba Nasional Teknologi Informasi BIOSFEST 2026 yang diselenggarakan oleh Universitas Bunda Mulia.
 
 ## 🚀 Fitur
 
@@ -31,17 +31,17 @@ Website resmi untuk Seminar dan Lomba Nasional Teknologi Informasi BIOSFEST 2025
 
 - **Submit Proposal** (`/dashboard/proposal`) - Upload proposal PDF (Seleksi 1)
 
-  - Deadline: 13 April 2025
+  - Deadline: 13 April 2026
 
 - **Submit Penyisihan** (`/dashboard/penyisihan`) - Submit link project (Seleksi 2)
 
   - Link Figma (untuk SMA/SMK) atau Google Drive (untuk Mahasiswa)
   - Link video demo YouTube
-  - Deadline: 20 April 2025
+  - Deadline: 20 April 2026
 
 - **Submit Final** (`/dashboard/final`) - Upload PPT presentasi (Seleksi 3)
   - Upload file PPT/PPTX
-  - Deadline: 4 Mei 2025
+  - Deadline: 4 Mei 2026
 
 ## 📅 Timeline Lomba
 
@@ -168,4 +168,4 @@ Website ini saat ini berjalan sebagai frontend. Untuk production, perlu integras
 
 ---
 
-© 2025 BIOSFEST - Universitas Bunda Mulia. All rights reserved.
+© 2026 BIOSFEST - Universitas Bunda Mulia. All rights reserved.

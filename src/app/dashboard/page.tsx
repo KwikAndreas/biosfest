@@ -7,7 +7,7 @@ export default function DashboardPage() {
   const userData = {
     nama: "John Doe",
     kategori: "Mahasiswa",
-    tim: "Team BIOSFEST 2025",
+    tim: "Team BIOSFEST 2026",
   };
 
   return (
@@ -52,7 +52,7 @@ export default function DashboardPage() {
                 Upload proposal dalam format PDF
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                Deadline: 13 April 2025
+                Deadline: 13 April 2026
               </p>
             </div>
           </Link>
@@ -82,7 +82,7 @@ export default function DashboardPage() {
                 Upload link Figma/Drive + Video YouTube
               </p>
               <p className="text-xs text-gray-500 mt-2">
-                Deadline: 20 April 2025
+                Deadline: 20 April 2026
               </p>
             </div>
           </Link>
@@ -111,7 +111,7 @@ export default function DashboardPage() {
               <p className="text-gray-600 text-sm">
                 Upload PPT presentasi final
               </p>
-              <p className="text-xs text-gray-500 mt-2">Deadline: 4 Mei 2025</p>
+              <p className="text-xs text-gray-500 mt-2">Deadline: 4 Mei 2026</p>
             </div>
           </Link>
         </div>
