@@ -40,7 +40,6 @@ export default function DaftarPage() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Kategori */}
           <div>
             <label className="block text-sm font-semibold text-gray-900 mb-2">
               Kategori Lomba *
