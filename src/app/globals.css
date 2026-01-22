@@ -55,9 +55,9 @@
   }
 }
 
-* {
+/* * {
   cursor: none;
-}
+} */
 
 body {
   background: var(--background);

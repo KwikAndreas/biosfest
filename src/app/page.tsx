@@ -468,7 +468,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-2 text-slate-900">
                   Seleksi 3 - Finalist
                 </h3>
-                <p className="text-slate-600">Presentasi / pitching ke juri</p>
+                <p className="text-slate-600">Pitching ke juri</p>
               </div>
             </div>
 
