@@ -40,18 +40,35 @@ export default function LoginPage() {
   const handleForgotPassword = (e: React.FormEvent) => {
     e.preventDefault();
     alert(
-      `Link reset password telah dikirim ke email yang terdaftar dengan username Anda. Silakan cek inbox atau spam folder.`
+      `Link reset password telah dikirim ke email yang terdaftar dengan username Anda. Silakan cek inbox atau spam folder.`,
     );
     setShowForgotPassword(false);
     setResetEmail("");
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 py-20 px-4">
-      <div className="max-w-md w-full mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-50 py-36 px-4">
+      <div className="max-w-md w-full mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-10">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Login</h1>
-          <p className="text-gray-600">Masuk ke akun BIOSFEST Anda</p>
+          <div className="inline-block mb-4">
+            <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+              <svg
+                className="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">Login</h1>
+          <p className="text-slate-600">Masuk ke akun BIOSFEST Anda</p>
         </div>
 
         {!showForgotPassword ? (
@@ -60,7 +77,7 @@ export default function LoginPage() {
               <div>
                 <label
                   htmlFor="username"
-                  className="block text-sm font-semibold text-gray-900 mb-2"
+                  className="block text-sm font-semibold text-slate-900 mb-2"
                 >
                   Username (12-16 digit angka)
                 </label>
@@ -69,7 +86,7 @@ export default function LoginPage() {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-white text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition bg-white text-slate-900 placeholder:text-slate-400 hover:border-slate-300"
                   placeholder="123456789012"
                   pattern="\d{12,16}"
                   title="Username harus 12-16 digit angka"
@@ -81,14 +98,14 @@ export default function LoginPage() {
                 <div className="flex items-center justify-between mb-2">
                   <label
                     htmlFor="password"
-                    className="block text-sm font-semibold text-gray-900"
+                    className="block text-sm font-semibold text-slate-900"
                   >
                     Password
                   </label>
                   <button
                     type="button"
                     onClick={() => setShowForgotPassword(true)}
-                    className="text-sm text-blue-600 hover:text-blue-700 font-semibold transition"
+                    className="text-sm text-cyan-600 hover:text-cyan-700 font-semibold transition"
                   >
                     Lupa Password?
                   </button>
@@ -98,7 +115,7 @@ export default function LoginPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-white text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition bg-white text-slate-900 placeholder:text-slate-400 hover:border-slate-300"
                   placeholder="Masukkan password Anda"
                   required
                 />
@@ -107,18 +124,18 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-3 rounded-xl font-semibold hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 disabled:from-slate-400 disabled:to-slate-400 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
               >
                 {isLoading ? "Memproses..." : "Masuk"}
               </button>
             </form>
 
             <div className="mt-6 text-center">
-              <p className="text-gray-600">
+              <p className="text-slate-600">
                 Belum punya akun?{" "}
                 <Link
                   href="/daftar"
-                  className="text-blue-600 font-semibold hover:text-blue-700 transition"
+                  className="text-cyan-600 font-semibold hover:text-cyan-700 transition"
                 >
                   Daftar Sekarang
                 </Link>
@@ -152,8 +169,8 @@ export default function LoginPage() {
         ) : (
           <>
             <form onSubmit={handleForgotPassword} className="space-y-6">
-              <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 mb-6">
-                <p className="text-sm text-gray-700">
+              <div className="bg-cyan-50 p-4 rounded-xl border border-cyan-100 mb-6">
+                <p className="text-sm text-slate-700">
                   Masukkan username Anda. Link reset password akan dikirim ke
                   email yang terdaftar.
                 </p>
@@ -162,7 +179,7 @@ export default function LoginPage() {
               <div>
                 <label
                   htmlFor="resetUsername"
-                  className="block text-sm font-semibold text-gray-900 mb-2"
+                  className="block text-sm font-semibold text-slate-900 mb-2"
                 >
                   Username (12-16 digit angka)
                 </label>
@@ -171,7 +188,7 @@ export default function LoginPage() {
                   type="text"
                   value={resetEmail}
                   onChange={(e) => setResetEmail(e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition bg-white text-gray-900 placeholder:text-gray-400"
+                  className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition bg-white text-slate-900 placeholder:text-slate-400 hover:border-slate-300"
                   placeholder="123456789012"
                   pattern="\d{12,16}"
                   title="Username harus 12-16 digit angka"
@@ -181,7 +198,7 @@ export default function LoginPage() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                className="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-3 rounded-xl font-semibold hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Kirim Link Reset Password
               </button>
@@ -192,7 +209,7 @@ export default function LoginPage() {
                   setShowForgotPassword(false);
                   setResetEmail("");
                 }}
-                className="w-full text-gray-600 py-2 text-sm font-semibold hover:text-gray-700 transition"
+                className="w-full text-slate-600 py-2 text-sm font-semibold hover:text-slate-700 transition"
               >
                 Kembali ke Login
               </button>
