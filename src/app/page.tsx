@@ -230,73 +230,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="group relative bg-gradient-to-br from-orange-50 via-white to-red-50 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border-2 border-orange-100 hover:border-orange-300 overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-200/20 rounded-full blur-3xl group-hover:w-40 group-hover:h-40 transition-all duration-500"></div>
-              <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg
-                    className="w-7 h-7 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                    />
-                  </svg>
-                </div>
-                <div className="mb-2">
-                  <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-3">
-                    Mahasiswa
-                  </span>
-                </div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-slate-900">
-                  Pemrograman Game
-                </h3>
-                <p className="text-slate-700 mb-6 leading-relaxed">
-                  Kembangkan game inovatif dengan teknologi pilihanmu. Bebas
-                  menggunakan game engine dan tech stack apapun!
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-slate-700 font-medium">
-                      Untuk Mahasiswa aktif
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-slate-700 font-medium">
-                      Bebas memilih game engine & tech stack
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             <div className="group relative bg-gradient-to-br from-purple-50 via-white to-indigo-50 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border-2 border-purple-100 hover:border-purple-300 overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200/20 rounded-full blur-3xl group-hover:w-40 group-hover:h-40 transition-all duration-500"></div>
               <div className="relative z-10">
@@ -359,6 +292,73 @@ export default function Home() {
                     </svg>
                     <span className="text-slate-700 font-medium">
                       Bebas memilih framework & tech stack
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="group relative bg-gradient-to-br from-orange-50 via-white to-red-50 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border-2 border-orange-100 hover:border-orange-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-200/20 rounded-full blur-3xl group-hover:w-40 group-hover:h-40 transition-all duration-500"></div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg
+                    className="w-7 h-7 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                    />
+                  </svg>
+                </div>
+                <div className="mb-2">
+                  <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-3">
+                    Mahasiswa
+                  </span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-slate-900">
+                  Pemrograman Game
+                </h3>
+                <p className="text-slate-700 mb-6 leading-relaxed">
+                  Kembangkan game inovatif dengan teknologi pilihanmu. Bebas
+                  menggunakan game engine dan tech stack apapun!
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-700 font-medium">
+                      Untuk Mahasiswa aktif
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-slate-700 font-medium">
+                      Bebas memilih game engine & tech stack
                     </span>
                   </li>
                 </ul>

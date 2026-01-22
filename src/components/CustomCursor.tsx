@@ -11,7 +11,7 @@ export default function CustomCursor() {
     let currentX = 0
     let currentY = 0
 
-    const speed = 0.15 // makin kecil = makin halus
+    const speed = 0.075 // makin kecil = makin halus
 
     const move = () => {
       currentX += (mouseX - currentX) * speed
