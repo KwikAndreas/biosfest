@@ -48,7 +48,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-50 py-36 px-4">
-      <div className="max-w-md w-full mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-10">
+      <div className="max-w-2xl w-full mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-10">
         <div className="text-center mb-8">
           <div className="inline-block mb-4">
             <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
@@ -85,11 +85,17 @@ export default function LoginPage() {
                   id="username"
                   type="text"
                   value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, ""); // Hanya angka
+                    if (value.length <= 16) {
+                      setUsername(value);
+                    }
+                  }}
                   className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition bg-white text-slate-900 placeholder:text-slate-400 hover:border-slate-300"
                   placeholder="123456789012"
                   pattern="\d{12,16}"
                   title="Username harus 12-16 digit angka"
+                  inputMode="numeric"
                   required
                 />
               </div>
@@ -187,11 +193,17 @@ export default function LoginPage() {
                   id="resetUsername"
                   type="text"
                   value={resetEmail}
-                  onChange={(e) => setResetEmail(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, ""); // Hanya angka
+                    if (value.length <= 16) {
+                      setResetEmail(value);
+                    }
+                  }}
                   className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition bg-white text-slate-900 placeholder:text-slate-400 hover:border-slate-300"
                   placeholder="123456789012"
                   pattern="\d{12,16}"
                   title="Username harus 12-16 digit angka"
+                  inputMode="numeric"
                   required
                 />
               </div>

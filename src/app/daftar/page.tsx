@@ -22,8 +22,9 @@ export default function DaftarPage() {
   };
 
   const handleAnggotaChange = (index: number, value: string) => {
+    const filteredValue = value.replace(/[^a-zA-Z\s]/g, '');
     const newAnggota = [...formData.namaAnggota];
-    newAnggota[index] = value;
+    newAnggota[index] = filteredValue;
     setFormData({ ...formData, namaAnggota: newAnggota });
   };
 
@@ -191,7 +192,7 @@ export default function DaftarPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-cyan-50 to-teal-50 py-20 px-4">
-      <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12">
+      <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12">
         <div className="text-center mb-8">
           <div className="inline-block mb-4">
             <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
@@ -252,9 +253,11 @@ export default function DaftarPage() {
             <input
               type="text"
               value={formData.namaKetua}
-              onChange={(e) =>
-                setFormData({ ...formData, namaKetua: e.target.value })
-              }
+              onChange={(e) => {
+                const value = e.target.value.replace(/[^a-zA-Z\s]/g, '');
+                setFormData({ ...formData, namaKetua: value });
+              }}
+              pattern="[a-zA-Z\s]+"
               className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none bg-white text-slate-900 placeholder:text-slate-400 transition hover:border-slate-300"
               placeholder="Sesuai KTP/Identitas"
               required
@@ -267,7 +270,7 @@ export default function DaftarPage() {
               NIM/NISN Ketua Tim *
             </label>
             <input
-              type="text"
+              type="number"
               value={formData.nimKetua}
               onChange={(e) =>
                 setFormData({ ...formData, nimKetua: e.target.value })
@@ -303,11 +306,12 @@ export default function DaftarPage() {
                       onChange={(e) =>
                         handleAnggotaChange(index, e.target.value)
                       }
+                      pattern="[a-zA-Z\s]*"
                       className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none bg-white text-slate-900 placeholder:text-slate-400 transition hover:border-slate-300"
                       placeholder="Nama Lengkap"
                     />
                     <input
-                      type="text"
+                      type="number"
                       value={formData.nimAnggota[index]}
                       onChange={(e) =>
                         handleNimAnggotaChange(index, e.target.value)
@@ -361,7 +365,7 @@ export default function DaftarPage() {
               Nomor WhatsApp *
             </label>
             <input
-              type="tel"
+              type="number"
               value={formData.whatsapp}
               onChange={(e) =>
                 setFormData({ ...formData, whatsapp: e.target.value })

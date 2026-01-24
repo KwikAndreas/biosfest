@@ -193,7 +193,7 @@ export default function Home() {
                   Figma. Tunjukkan kreativitasmu dalam merancang aplikasi yang
                   user-friendly dan menarik!
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <svg
                       className="w-5 h-5 text-teal-600 mr-3 mt-0.5 flex-shrink-0"
@@ -227,6 +227,25 @@ export default function Home() {
                     </span>
                   </li>
                 </ul>
+                <Link
+                  href="/lomba/sma"
+                  className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-xl font-semibold hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg group"
+                >
+                  Lihat Detail
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
 
@@ -261,7 +280,7 @@ export default function Home() {
                   web modern. Tunjukkan kemampuanmu dalam front-end dan back-end
                   development!
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <svg
                       className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0"
@@ -295,6 +314,25 @@ export default function Home() {
                     </span>
                   </li>
                 </ul>
+                <Link
+                  href="/lomba/mahasiswa-webdev"
+                  className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl font-semibold hover:from-purple-500 hover:to-indigo-500 transition-all duration-300 shadow-md hover:shadow-lg group"
+                >
+                  Lihat Detail
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
 
@@ -326,9 +364,9 @@ export default function Home() {
                 </h3>
                 <p className="text-slate-700 mb-6 leading-relaxed">
                   Kembangkan game inovatif dengan teknologi pilihanmu. Bebas
-                  menggunakan game engine dan tech stack apapun!
+                  menggunakan Game Engine dan tech stack apapun!
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
                     <svg
                       className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0"
@@ -358,10 +396,29 @@ export default function Home() {
                       />
                     </svg>
                     <span className="text-slate-700 font-medium">
-                      Bebas memilih game engine & tech stack
+                      Bebas memilih Game Engine & tech stack
                     </span>
                   </li>
                 </ul>
+                <Link
+                  href="/lomba/mahasiswa-game"
+                  className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl font-semibold hover:from-orange-500 hover:to-red-500 transition-all duration-300 shadow-md hover:shadow-lg group"
+                >
+                  Lihat Detail
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>
