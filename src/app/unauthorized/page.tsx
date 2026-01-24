@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 export default function UnauthorizedPage() {
   const router = useRouter();
 
@@ -55,7 +57,7 @@ export default function UnauthorizedPage() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/login"
+              href="/"
               className="group px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-full font-bold text-lg hover:from-amber-500 hover:to-orange-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2"
             >
               <svg
@@ -68,10 +70,10 @@ export default function UnauthorizedPage() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                 />
               </svg>
-              Login
+              Beranda
             </Link>
             <button
               onClick={() => router.back()}
@@ -98,12 +100,6 @@ export default function UnauthorizedPage() {
                 className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg text-slate-300 hover:text-white transition-colors"
               >
                 Pendaftaran
-              </Link>
-              <Link
-                href="/#kategori-lomba"
-                className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg text-slate-300 hover:text-white transition-colors"
-              >
-                Info Lomba
               </Link>
             </div>
           </div>

@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+
+export const dynamic = "force-dynamic";
 
 export default function DaftarPage() {
   const [formData, setFormData] = useState({
@@ -22,7 +25,7 @@ export default function DaftarPage() {
   };
 
   const handleAnggotaChange = (index: number, value: string) => {
-    const filteredValue = value.replace(/[^a-zA-Z\s]/g, '');
+    const filteredValue = value.replace(/[^a-zA-Z\s]/g, "");
     const newAnggota = [...formData.namaAnggota];
     newAnggota[index] = filteredValue;
     setFormData({ ...formData, namaAnggota: newAnggota });
@@ -172,17 +175,18 @@ export default function DaftarPage() {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <button
+                type="button"
                 onClick={() => setIsSubmitted(false)}
                 className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-xl font-semibold hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Daftar Tim Lain
               </button>
-              <a
+              <Link
                 href="/"
-                className="px-6 py-3 bg-slate-100 text-slate-700 rounded-xl font-semibold hover:bg-slate-200 transition-all duration-300"
+                className="px-6 py-3 bg-slate-100 text-slate-700 rounded-xl font-semibold hover:bg-slate-200 transition-all duration-300 inline-flex items-center justify-center"
               >
                 Kembali ke Beranda
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -254,7 +258,7 @@ export default function DaftarPage() {
               type="text"
               value={formData.namaKetua}
               onChange={(e) => {
-                const value = e.target.value.replace(/[^a-zA-Z\s]/g, '');
+                const value = e.target.value.replace(/[^a-zA-Z\s]/g, "");
                 setFormData({ ...formData, namaKetua: value });
               }}
               pattern="[a-zA-Z\s]+"

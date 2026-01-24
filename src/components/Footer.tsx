@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -31,15 +33,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/login"
-                  className="text-slate-400 hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/daftar"
                   className="text-slate-400 hover:text-cyan-400 transition-colors inline-flex items-center gap-2 group"
                 >
@@ -59,7 +52,9 @@ export default function Footer() {
             </p>
             <div>
               <h4 className="text-lg font-semibold text-white mb-3">Kontak</h4>
-              <p className="text-sm text-slate-400">Email: ubmbiosancol@gmail.com</p>
+              <p className="text-sm text-slate-400">
+                Email: ubmbiosancol@gmail.com
+              </p>
             </div>
           </div>
         </div>

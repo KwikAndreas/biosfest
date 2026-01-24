@@ -25,12 +25,6 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/login"
-              className="text-slate-700 hover:text-cyan-600 transition-colors font-medium"
-            >
-              Login
-            </Link>
-            <Link
               href="/daftar"
               className="px-6 py-2.5 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-full hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
             >
@@ -72,13 +66,6 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Home
-            </Link>
-            <Link
-              href="/login"
-              className="block px-3 py-2 rounded-lg text-slate-700 hover:bg-cyan-50 hover:text-cyan-600 transition-colors font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Login
             </Link>
             <Link
               href="/daftar"

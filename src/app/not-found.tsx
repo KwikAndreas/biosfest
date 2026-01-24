@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 flex items-center justify-center px-4">
@@ -84,12 +86,6 @@ export default function NotFound() {
                 className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg text-slate-300 hover:text-white transition-colors"
               >
                 Pendaftaran
-              </Link>
-              <Link
-                href="/login"
-                className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg text-slate-300 hover:text-white transition-colors"
-              >
-                Login
               </Link>
               <Link
                 href="/#kategori-lomba"

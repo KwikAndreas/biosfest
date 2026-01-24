@@ -50,12 +50,12 @@ export default function LombaGameDevPage() {
                 />
               </svg>
             </Link>
-            <button
-              onClick={() => window.history.back()}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
+            <Link
+              href="/"
+              className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 inline-block text-center"
             >
               Kembali
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -429,12 +429,12 @@ export default function LombaGameDevPage() {
                 />
               </svg>
             </Link>
-            <button
-              onClick={() => window.history.back()}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
+            <Link
+              href="/"
+              className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105 inline-block text-center"
             >
               Kembali
-            </button>
+            </Link>
           </div>
         </div>
       </section>
